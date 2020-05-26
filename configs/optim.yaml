@@ -1,0 +1,4 @@
+training_params:
+  batch_size: 32
+  num_epochs: 10
+  learning_rate: 0.001

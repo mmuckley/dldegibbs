@@ -1,0 +1,5 @@
+transform_params:
+  gibb_size: 100
+  orig_big: 256
+  pf_fact: 8
+  pe_fact: 1

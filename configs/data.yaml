@@ -1,0 +1,6 @@
+exp_dir: "~/data/logs/diffusion/public/res_256_to_130/"
+
+train_data:
+  train_data_dir: "/gpfs/data/cbi/shared/unpacked_imagenet/"
+  test_data_dir: "/gpfs/data/cbi/shared/unpacked_imagenet/2019_04_12_imagenet2013test"
+  workers_per_gpu: 10

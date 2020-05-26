@@ -1,0 +1,34 @@
+model_params:
+  nlayers: 10
+  nchans: 64
+
+exp_types:
+  complex:
+    in_ch: 2
+    out_ch: 2
+    comp2mag: True
+    leaky: False
+
+  complex_margosian:
+    in_ch: 3
+    out_ch: 2
+    comp2mag: True
+    leaky: False
+
+  complex_pocs:
+    in_ch: 3
+    out_ch: 2
+    comp2mag: True
+    leaky: False
+
+  magnitude:
+    in_ch: 1
+    out_ch: 1
+    comp2mag: False
+    leaky: False
+
+  magnitude_lores:
+    in_ch: 1
+    out_ch: 1
+    comp2mag: False
+    leaky: False
