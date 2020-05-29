@@ -4,7 +4,7 @@
 
 A deep learning model trained on ImageNet for removing noise and Gibbs artifacts from diffusion images.
 
-This repository contains code for reproducing experiments from the paper, "[Training a Neural Network for Gibbs and Noise Removal in Diffusion MRI](https://arxiv.org/abs/1905.04176)" by M. Muckley et al.
+This repository contains code for reproducing models from the paper, "[Training a Neural Network for Gibbs and Noise Removal in Diffusion MRI](https://arxiv.org/abs/1905.04176)" by M. Muckley et al.
 
 This package was developed entirely for research purposes at the NYU School of Medicine and is not affiliated with any other entity. It has not been validated for clinical use.
 
@@ -35,3 +35,14 @@ Pretrained models are available on [GLOBUS](https://app.globus.org/file-manager?
 Models from the pretrained experiment are saved based on best MSE on the ImageNet validation data set.
 To use a pretrained model, download one of the model folders from GLOBUS (either `res_256_to_100` if you're working on 100 x 100 images or `res_256_to_130` if you're working on 130 x 130 images) and change the `configs/data.yaml` script `exp_dir` variable to where you save it in your local file system.
 When running `degibbs_main.py`, you should get a message that the script found the file and loaded the model.
+
+## Citation
+
+```latex
+@article{muckley2019training,
+  title={Training a Neural Network for Gibbs and Noise Removal in Diffusion MRI},
+  author={Muckley, Matthew J and Ades-Aron, Benjamin and Papaioannou, Antonios and Lemberskiy, Gregory and Solomon, Eddy and Lui, Yvonne W and Sodickson, Daniel K and Fieremans, Els and Novikov, Dmitry S and Knoll, Florian},
+  journal={arXiv preprint arXiv:1905.04176},
+  year={2019}
+}
+```
