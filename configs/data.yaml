@@ -1,4 +1,4 @@
-exp_dir: "~/data/logs/diffusion/public/res_256_to_130/"
+exp_dir: "/Users/honghsilee/Documents/GitHub/dldegibbs/trained_models/res_256_to_100"
 
 train_data:
   train_data_dir: "/gpfs/data/cbi/shared/unpacked_imagenet/"

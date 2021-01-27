@@ -1,6 +1,6 @@
 import numpy as np
 from skimage.metrics import structural_similarity
-from skimage.measure import compare_psnr
+from skimage.metrics import peak_signal_noise_ratio
 
 
 class MetricEval(object):
@@ -17,7 +17,7 @@ class MetricEval(object):
     @staticmethod
     def psnr(gt, pred):
         """ Compute Peak Signal to Noise Ratio metric (PSNR) """
-        return compare_psnr(gt, pred, data_range=gt.max())
+        return peak_signal_noise_ratio(gt, pred, data_range=gt.max())
 
     @staticmethod
     def ssim(gt, pred):
